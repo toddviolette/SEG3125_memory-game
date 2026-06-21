@@ -1,0 +1,310 @@
+/* ---------- Global ---------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #212531f4, #322f42, #4b3a70);
+    color: white;
+}
+
+h1, h2, h3 {
+    font-family: "Orbitron", sans-serif;
+}
+
+
+/* ---------- Navbar ---------- */
+
+.custom-navbar {
+    height: 85px;
+    background: #212531;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.nav-logo {
+    height: 100px;
+    object-fit: contain;
+}
+
+
+/* ---------- Home ---------- */
+
+
+.home-section {
+  min-height: 100vh;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+
+.welcome-title {
+  color: white;
+  font-weight: 800;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 1px;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.85);
+}
+
+.welcome-subtitle {
+  color: #c5c3c4;
+  font-size: 18px;
+  margin-top: 12px;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.65);
+  font-family: 'Poppins', sans-serif;
+}
+
+.instruction-card {
+  background: #b7a2c9 !important;
+  color: #212531;
+  border-radius: 32px;
+  max-width: 600px;
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.35));
+}
+
+.instruction-list {
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.home-logo {
+  width: 600px;
+  max-width: none;
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.65));
+}
+
+
+/* ---------- Setup ---------- */
+
+
+.setup-section {
+  min-height: 100vh;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.setup-title {
+  color: white;
+  font-weight: 800;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.75);
+  margin-bottom: 20px;
+}
+
+.setup-subtitle {
+  color: #c5c3c4;
+  margin-bottom: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+.setup-card {
+  max-width: 700px;
+  background: rgba(33, 37, 49, 0.85);
+  border-radius: 26px;
+  padding: 40px;
+  box-shadow: 0 0 35px rgba(183, 162, 201, 0.25);
+}
+
+.setup-label {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 24px;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.85);
+}
+
+.setup-btn {
+  width: 150px;
+  height: 50px;
+  margin-bottom: 10px;
+  background: transparent;
+  border: 2px solid #b7a2c9;
+  border-radius: 40px;
+  color: white;
+  font-size: 12pt;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.setup-btn:hover {
+    background: rgba(183,162,201,.15);
+    border-color: #c5c3c4;
+    color: white;
+}
+
+.active-setup-btn {
+    background: #b7a2c9;
+    color: #212531;
+}
+
+.memorize-time {
+  margin-top: 18px;
+  color: #c5c3c4;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.memorize-time span {
+  color: #b7a2c9;
+  font-weight: 700;
+}
+
+.preview-grid {
+  width: 320px;
+  height: 320px;
+  display: grid;
+  gap: 10px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.preview-tile {
+  background-color: #c5c3c4;
+  border-radius: 10px;
+  aspect-ratio: 1 / 1;
+}
+
+.start-game-btn {
+  background-color: #b7a2c9;
+  color: #212531;
+  border-radius: 50px;
+  padding: 12px 35px;
+  font-weight: 700;
+  border: 2px solid #b7a2c9;
+  transition: 0.35s;
+}
+
+.start-game-btn:hover {
+  background-color: #4b3a70;
+  border: 2px solid #b7a2c9;
+  color: #b7a2c9; 
+  transition: 0.35s;
+}
+
+
+/* ---------- Game ---------- */
+
+
+.game-screen {
+  min-height: 100vh;
+  padding-top: 100px;
+  background: linear-gradient(135deg, #212531, #322f42, #4b3a70);
+  color: white;
+}
+
+.game-title {
+  color: white;
+  font-weight: 800;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.85);
+}
+
+.game-info {
+  color: #c5c3c4;
+  margin-bottom: 35px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.game-grid {
+  width: 420px;
+  height: 420px;
+  display: grid;
+  gap: 12px;
+}
+
+.game-tile {
+  border: none;
+  border-radius: 14px;
+  background-color: #c5c3c4;
+  transition: background-color 0.25s, box-shadow 0.25s;
+}
+
+.highlighted-tile {
+  background-color: #4b3a70;
+  box-shadow: 0 0 22px rgba(183, 162, 201, 0.9);
+}
+
+.selected-tile {
+  background-color: #b7a2c9;
+  box-shadow: 0 0 22px rgba(255, 255, 255, 0.5);
+  transition: background-color 0.25s, box-shadow 0.25s;
+}
+
+.submit-btn {
+  background-color: #b7a2c9;
+  color: #212531;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 35px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.35s;
+}
+
+.submit-btn:hover {
+  color: white;
+  transition: 0.35s;
+  background-color: #212531;
+}
+
+
+/* ---------- Results ---------- */
+
+
+.results-screen {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #212531, #322f42, #4b3a70);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f4eaff;
+}
+
+.results-card {
+  background: rgba(33, 37, 49, 0.9);
+  border-radius: 26px;
+  padding: 45px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 0 35px rgba(183, 162, 201, 0.3);
+  font-family: 'Poppins', sans-serif;
+}
+
+.results-title {
+  color: white;
+  font-weight: 800;
+  margin-bottom: 25px;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.85);
+}
+
+.results-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.results-btn {
+  background: #b7a2c9;
+  color: #212531;
+  border: none;
+  border-radius: 40px;
+  padding: 12px 28px;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.results-btn:hover {
+  background: #c5c3c4;
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 2px solid #b7a2c9;
+  color: white;
+}
+
+.secondary-btn:hover {
+  background: rgba(183, 162, 201, 0.15);
+}
