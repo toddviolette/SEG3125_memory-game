@@ -56,6 +56,13 @@ function GameBoard({ difficulty, gridSize, setResults, setScreen }) {
   }
 
   return (
+    <>
+    <nav className="navbar navbar-expand-lg fixed-top custom-navbar">
+        <div className="container justify-content-center">
+          <img src="/logo.png"className="nav-logo"/>
+        </div>
+      </nav>
+      
     <main className="game-screen">
       <div className="container text-center">
         <h1 className="game-title">Flash Recall</h1>
@@ -99,6 +106,7 @@ function GameBoard({ difficulty, gridSize, setResults, setScreen }) {
         )}
       </div>
     </main>
+    </>
   );
 }
 

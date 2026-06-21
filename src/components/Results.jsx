@@ -1,5 +1,12 @@
 function Results({ results, restartGame, returnToSetup }) {
   return (
+    <>
+    <nav className="navbar navbar-expand-lg fixed-top custom-navbar">
+        <div className="container justify-content-center">
+          <img src="/logo.png"className="nav-logo"/>
+        </div>
+      </nav>
+
     <main className="results-screen">
       <div className="results-card text-center">
         <h1 className="results-title">Results</h1>
@@ -26,6 +33,7 @@ function Results({ results, restartGame, returnToSetup }) {
         </div>
       </div>
     </main>
+    </>
   );
 }
 
